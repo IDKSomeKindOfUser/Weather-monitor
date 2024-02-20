@@ -24,34 +24,30 @@ body {
   color: rgb(35, 35, 35);
   font-family: Hachi Maru Pop;
   font-size: 40px;
-  font-weight: 400;
-  line-height: 58px;
   text-align: left;
   margin-bottom: 10px;
 }
 .form {
-  width: 450px;
-  height: 60px;
+  /* height: 60px; */
   display: flex;
   border-radius: 10px;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-family: Happy Monkey;
   font-size: 30px;
-  font-weight: 400;
-  line-height: 36px;
+  min-width: fit-content;
 }
+
 .input {
-  width: 290px;
+  width: 100%;
   padding: 12px;
+  padding-right: 0;
+  /* resize: vertical; */
 }
 .btn {
   padding: 12px 38px;
-  width: 160px;
-  height: 60px;
   border-radius: 10px;
   background: rgb(167, 168, 204);
-
   transition: background-color 0.2s ease-in;
 }
 .btn:hover {
@@ -60,22 +56,28 @@ body {
 
 .card {
   position: relative;
-  padding: 25px 0;
-  height: 210px;
   min-width: fit-content;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 10px 30px 0px rgb(151, 123, 157);
   color: rgb(0, 0, 0);
   font-family: Happy Monkey;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0%;
-  text-align: left;
+  padding: 25px 30px;
   display: flex;
+ 
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 20px;
+}
 .card::before {
   position: absolute;
   width: 95%;
@@ -91,7 +93,6 @@ body {
 }
 .card-city {
   font-size: 30px;
-  padding-left: 67px;
   margin-bottom: 20px;
 }
 .card-country {
@@ -100,24 +101,20 @@ body {
   border-radius: 10px;
   background: rgb(242, 194, 235);
   font-size: 14px;
-  line-height: 1;
   margin-left: 10px;
   vertical-align: text-top;
 }
 .card-num-of-C {
   font-size: 50px;
-  padding-left: 86px;
   margin-bottom: 20px;
 }
 .card-conditions {
   font-size: 30px;
-  padding-left: 67px;
 }
 .card-icon {
-  margin: 0 50px;
-  width: 185px;
-  height: 150px;
-  object-fit: cover;
+  margin: 0 30px;
+  width: 100%;
+  max-width: 180px;
 }
 
 .footer {
@@ -132,8 +129,26 @@ body {
   margin-top: auto;
   text-align: right;
 }
-a.sign {
+.sign {
   color: rgb(0, 0, 0);
   font-family: Happy Monkey;
   font-size: 12px;
+}
+@media screen and (max-width:450px) {
+  .btn {
+    padding: 12px 15px;
+  }
+  
+}
+@media screen and (max-width:350px) {
+  .btn {
+    padding: 12px 10px;
+  }
+  .form{
+    font-size: 22px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  
 }
