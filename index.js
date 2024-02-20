@@ -25,7 +25,7 @@ function addCard({ name, country, temp_c, condition, imgPath }) {
 }
 async function getWeather(city) {
   const apiKey = "afe364b2771544e6add64557242002";
-  const query = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+  const query = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
   const response = await fetch(query);
   const data = await response.json();
   return data;
