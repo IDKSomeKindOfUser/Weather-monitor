@@ -76,7 +76,6 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-left: 20px;
 }
 .card::before {
   position: absolute;
@@ -112,8 +111,7 @@ body {
   font-size: 30px;
 }
 .card-icon {
-  margin: 0 30px;
-  width: 100%;
+  width: 38vw;
   max-width: 180px;
 }
 
@@ -150,5 +148,4 @@ body {
   .title {
     font-size: 32px;
   }
-  
 }
