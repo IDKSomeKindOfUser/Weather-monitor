@@ -23,29 +23,26 @@ body {
 .title {
   color: rgb(35, 35, 35);
   font-family: Hachi Maru Pop;
-  font-size: 40px;
+  font-size: min(10vw, 40px);
   text-align: left;
   margin-bottom: 10px;
 }
 .form {
-  /* height: 60px; */
   display: flex;
   border-radius: 10px;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-family: Happy Monkey;
-  font-size: 30px;
-  min-width: fit-content;
+  font-size: min(7vw, 30px);
 }
 
 .input {
   width: 100%;
   padding: 12px;
   padding-right: 0;
-  /* resize: vertical; */
 }
 .btn {
-  padding: 12px 38px;
+  padding: 0.63vw 1.98vw;
   border-radius: 10px;
   background: rgb(167, 168, 204);
   transition: background-color 0.2s ease-in;
@@ -91,7 +88,7 @@ body {
   background: rgb(255, 255, 255);
 }
 .card-city {
-  font-size: 30px;
+  font-size: min(7vw, 30px);
   margin-bottom: 20px;
 }
 .card-country {
@@ -99,16 +96,16 @@ body {
   padding: 5px;
   border-radius: 10px;
   background: rgb(242, 194, 235);
-  font-size: 14px;
+  font-size: min(3.5vw ,14px);
   margin-left: 10px;
   vertical-align: text-top;
 }
 .card-num-of-C {
-  font-size: 50px;
+  font-size: min(13vw, 50px);
   margin-bottom: 20px;
 }
 .card-conditions {
-  font-size: 30px;
+  font-size: min(7vw, 30px);
 }
 .card-icon {
   width: 38vw;
@@ -131,21 +128,4 @@ body {
   color: rgb(0, 0, 0);
   font-family: Happy Monkey;
   font-size: 12px;
-}
-@media screen and (max-width:450px) {
-  .btn {
-    padding: 12px 15px;
-  }
-  
-}
-@media screen and (max-width:350px) {
-  .btn {
-    padding: 12px 10px;
-  }
-  .form{
-    font-size: 22px;
-  }
-  .title {
-    font-size: 32px;
-  }
 }
